@@ -1,3 +1,4 @@
+import 'package:_beginproject/views/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -7,13 +8,13 @@ GoRouter Rotalar() {
       GoRoute(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          return loginScreen();
+          return HomePageScreen();
         },
         routes: <RouteBase>[
           GoRoute(
             path: 'homePageScreen',
             builder: (BuildContext context, GoRouterState state) {
-              return HomePagebigScreen();
+              return HomePageScreen();
             },
           ),
         ],
@@ -21,14 +22,14 @@ GoRouter Rotalar() {
       GoRoute(
         path: '/HomePagebigScreen',
         builder: (context, state) {
-          return HomePagebigScreen();
+          return HomePageScreen();
         },
         routes: <RouteBase>[
           GoRoute(
             path:
                 'Roomscreen', // NOTE: Don't need to specify "/" character for router’s parents
             builder: (context, state) {
-              return Roomscreen();
+              return HomePageScreen();
             },
           ),
         ],
@@ -36,7 +37,7 @@ GoRouter Rotalar() {
       GoRoute(
         path: '/speechtotext',
         builder: (context, state) {
-          return HomePagebigScreen();
+          return HomePageScreen();
         },
         routes: <RouteBase>[
           // Add child routes
