@@ -10,6 +10,7 @@ class HomePageScreen extends ConsumerStatefulWidget {
 }
 
 class _HomePageScreenState extends ConsumerState<HomePageScreen> {
+  var a = 5;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
